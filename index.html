@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .width {
+            width: 100px;
+            height: 60px;
+            background-color: #003b64;
+            color: #cfd0d1;
+            cursor: pointer;
+        }
+        .width:hover{
+            background-color: #001829;
+        }
+
+        table {
+            position: absolute;
+            top: 110px;
+            left: 35%;
+            border: 9px solid #003b64;
+            color: #003b64;
+            font-size: 40px;
+        }
+
+        #td {
+            font-family: comic sans ms;
+            text-align: center;
+            color: #003b64;
+            background-color: #c9c9c9;
+            font-size: 9pt;
+        }
+
+        #ans {
+            width: 100px;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="4" id="td"> JavaScript Calculator </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <div class="answer" id="answer">0</div>
+            </td>
+            <td>
+                <input type="button" onclick="resDisplay('=')" class="width" value="=">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" onclick="inputNum('1')" class="width num" value="1">
+            </td>
+            <td>
+                <input type="button" onclick="inputNum('2')" class="width num" value="2">
+            </td>
+            <td>
+                <input type="button" onclick="inputNum('3')" class="width num" value="3">
+            </td>
+            <td>
+                <input type="button" onclick="inputOperator('+')" class="width operator" value="+">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="button" onclick="inputNum('4')" class="width num" value="4">
+            </td>
+            <td>
+                <input type="button" onclick="inputNum('5')" class="width num" value="5">
+            </td>
+            <td>
+                <input type="button" onclick="inputNum('6')" class="width num" value="6">
+            </td>
+            <td>
+                <input type="button" onclick="inputOperator('-')" class="width operator" value="-">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="button" onclick="inputNum('7')" class="width num" value="7">
+            </td>
+            <td>
+                <input type="button" onclick="inputNum('8')" class="width num" value="8">
+            </td>
+            <td>
+                <input type="button" onclick="inputNum('9')" class="width num" value="9">
+            </td>
+            <td>
+                <input type="button" onclick="inputOperator('*')" class="width operator" value="*">
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <input type="button" onclick="clearDisplay()" class="width" value="AC">
+            </td>
+            <td>
+                <input type="button" onclick="inputNum('0')" class="width num" value="0">
+            </td>
+            <td>
+                <input type="button" onclick="inputNum('.')" class="width num" value=".">
+            </td>
+            <td>
+                <input type="button" onclick="inputOperator('/')" class="width operator" value="/">
+            </td>
+        </tr>
+    </table>
+
+
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
